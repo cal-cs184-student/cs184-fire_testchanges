@@ -244,13 +244,13 @@ function init() {
 
 
     var mtlLoader = new THREE.MTLLoader();
-    mtlLoader.setTexturePath('https://hoangcto.github.io/cs184-firesimulation/fire_sim/obj/');
-    mtlLoader.setPath('https://hoangcto.github.io/cs184-firesimulation/fire_sim/obj/');
+    mtlLoader.setTexturePath('obj/');
+    mtlLoader.setPath('obj/');
     mtlLoader.load('CandleStick2.mtl', function (materials) {
         materials.preload();
 
         var objLoader = new THREE.OBJLoader();
-        objLoader.setPath('https://hoangcto.github.io/cs184-firesimulation/fire_sim/obj/');
+        objLoader.setPath('obj/');
         objLoader.load('CandleStick2.obj', function (object) {
 
         scene.add(object);
